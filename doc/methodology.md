@@ -42,7 +42,7 @@ This document describes the detailed methodology for analyzing global nutrition 
 - Load FoodBalanceSheet data (nutrition consumption data)
 - Load Population data (demographic data)
 - Load FoodSecurity data (food security indicators)
-- Scripts: `src/data_loader.py`, `scripts/integrate_datasets.py`
+
 
 ### 2. Data Cleaning
 
@@ -70,7 +70,6 @@ This document describes the detailed methodology for analyzing global nutrition 
 - Formula: `Consumption per capita = Total Nutrient Consumption / Population`
 - Calculate for each nutrient (protein, fat, sugar, fiber, calories, etc.)
 - Calculate for each country and year
-- Script: `src/data_processor.py`
 
 **Step 3.2: Create Derived Metrics**
 - Nutritional diversity index
@@ -112,19 +111,16 @@ This document describes the detailed methodology for analyzing global nutrition 
 - Mean, median, standard deviation
 - Min, max, quartiles
 - Skewness and kurtosis
-- Method: `src/analyzer.py::descriptive_statistics()`
 
 **1.2 Regional Analysis**
 - Compare dietary patterns by region
 - Identify regional differences
 - Analyze regional trends
-- Method: `src/analyzer.py::regional_analysis()`
 
 **1.3 Temporal Trend Analysis**
 - Analyze changes over time
 - Calculate growth rates
 - Identify trend patterns
-- Method: `src/analyzer.py::temporal_trend_analysis()`
 
 ### 2. Correlation Analysis
 
@@ -132,7 +128,6 @@ This document describes the detailed methodology for analyzing global nutrition 
 - Calculate correlation between nutrients and health outcomes
 - Identify strong associations
 - Analyze correlation patterns
-- Method: `src/analyzer.py::correlation_analysis()`
 
 **2.2 Cross-Nutrient Correlations**
 - Analyze relationships between different nutrients
@@ -147,7 +142,6 @@ This document describes the detailed methodology for analyzing global nutrition 
 - Lasso Regression
 - Random Forest
 - Gradient Boosting
-- Method: `src/models.py::train_obesity_model()`
 
 **3.2 Model Training**
 - Split data into training and testing sets
@@ -160,25 +154,21 @@ This document describes the detailed methodology for analyzing global nutrition 
 - RMSE (Root Mean Squared Error)
 - MAE (Mean Absolute Error)
 - Cross-validation
-- Method: `src/models.py::evaluate_model()`
 
 **3.4 Feature Importance**
 - Analyze feature importance
 - Identify key predictors
-- Method: `src/models.py::feature_importance()`
 
 ### 4. Visualization
 
 **4.1 Interactive Visualizations**
 - Interactive bar plot with country/nutrient selection
 - Plotly-based visualizations
-- Method: `src/visualizer.py::create_interactive_bar_plot()`
 
 **4.2 Static Visualizations**
 - Distribution plots
 - Correlation heatmaps
 - Trend line plots
-- Method: `src/visualizer.py` functions
 
 ## Analysis Philosophy
 

@@ -162,7 +162,6 @@ FoodBalanceSheet and FoodSecurity data include quality flags:
 ### Kaggle Dataset
 - **Dataset Name**: `vivekvv12/foodsecurity-data`
 - **Access Method**: `kagglehub` (recommended) or Kaggle API
-- **Loading Script**: `scripts/integrate_datasets.py` or `scripts/load_data_from_kaggle.py`
 - **See**: README.md for setup instructions
 
 ### Original Sources
