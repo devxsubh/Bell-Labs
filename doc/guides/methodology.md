@@ -31,8 +31,8 @@ This document describes the detailed methodology for analyzing global nutrition 
 
 **Step 1.1: Load from Kaggle**
 - Use `kagglehub` to load datasets directly from Kaggle
-- Script: `scripts/integrate_datasets.py` (main integration)
-- Alternative: `scripts/load_data_from_kaggle.py` (optional caching)
+- Main pipeline: `run_pipeline.py` (runs all preprocessing steps)
+- Individual scripts in `scripts/preprocessing/`, `scripts/panels/`
 - Datasets loaded:
   - FoodBalanceSheet: `FoodBalanceSheet_data/FoodBalanceSheets_E_All_Data_(Normalized).csv`
   - Population: `Population_data/Population_E_All_Area_Groups_NOFLAG.csv`
@@ -101,7 +101,7 @@ This document describes the detailed methodology for analyzing global nutrition 
 - Handle mismatched countries
 - Preserve all available data
 - Calculate per capita consumption where needed
-- Save integrated dataset: `data/processed/integrated_nutrition_data.csv`
+- Save final master panel: `data/processed/final/master_panel_final.csv`
 
 ## Analysis Methods
 

@@ -16,9 +16,9 @@ The project uses three main datasets loaded from Kaggle:
 
 ### Integrated Dataset
 
-**File**: `data/processed/integrated_nutrition_data.csv`
+**File**: `data/processed/final/master_panel_final.csv`
 
-This is the unified dataset created by `scripts/integrate_datasets.py` that merges all three datasets.
+This is the final master panel dataset created by the preprocessing pipeline (`run_pipeline.py`) that merges nutrients, food groups, population, and obesity data.
 
 ## Integrated Dataset Structure
 
@@ -175,7 +175,7 @@ FoodBalanceSheet and FoodSecurity data include quality flags:
 - Population data is transformed from wide to long format
 - All datasets are merged on Area and Year
 - Per capita consumption is calculated where needed
-- Integrated dataset saved to: `data/processed/integrated_nutrition_data.csv`
+- Final master panel saved to: `data/processed/final/master_panel_final.csv`
 
 ## Notes
 

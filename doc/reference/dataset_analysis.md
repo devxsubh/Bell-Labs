@@ -233,7 +233,7 @@ This document provides a comprehensive analysis of the three datasets (FoodBalan
 
 ### Step 5: Integrated Dataset
 
-**Output File**: `data/processed/integrated_nutrition_data.csv`
+**Output File**: `data/processed/final/master_panel_final.csv` (current format)
 
 **Dataset Characteristics**:
 - Format: CSV (normalized)
@@ -305,7 +305,7 @@ This document provides a comprehensive analysis of the three datasets (FoodBalan
 
 ## Integration Output
 
-**Integrated Dataset**: `data/processed/integrated_nutrition_data.csv`
+**Final Dataset**: `data/processed/final/master_panel_final.csv`
 
 **Schema**:
 - `Country`: Standardized country name (from Area)
