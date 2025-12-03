@@ -183,7 +183,7 @@ FoodBalanceSheet and FoodSecurity data include quality flags:
 - **Year Formats**: Years are integer values (YYYY format)
 - **Country Names**: Standardized during integration (title case, stripped whitespace)
 - **Temporal Coverage**: 
-  - FoodBalanceSheet: 2010-2023 (verify in your data)
+  - FoodBalanceSheet: 2010-2023 
   - Population: 1950-2023
   - FoodSecurity: 2000-2023 (3-year averages)
 - **Units**: 
